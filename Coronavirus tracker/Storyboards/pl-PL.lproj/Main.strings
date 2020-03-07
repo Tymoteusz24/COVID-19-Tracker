@@ -1,0 +1,108 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "20l-wa-5K5"; */
+"20l-wa-5K5.text" = "0";
+
+/* Class = "UITabBarItem"; title = "Health"; ObjectID = "2b7-bd-zc2"; */
+"2b7-bd-zc2.title" = "Health";
+
+/* Class = "UILabel"; text = "Confirmed: "; ObjectID = "5No-xH-ivJ"; */
+"5No-xH-ivJ.text" = "Confirmed: ";
+
+/* Class = "UILabel"; text = "-> Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe."; ObjectID = "Bq9-71-vAm"; */
+"Bq9-71-vAm.text" = "-> Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe.";
+
+/* Class = "UILabel"; text = "Mortality:"; ObjectID = "BqQ-UM-UhO"; */
+"BqQ-UM-UhO.text" = "Mortality:";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "D7c-OK-wjy"; */
+"D7c-OK-wjy.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!"; ObjectID = "FNt-qH-UeS"; */
+"FNt-qH-UeS.text" = "The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!";
+
+/* Class = "UITabBarItem"; title = "Main"; ObjectID = "Gud-pr-lpz"; */
+"Gud-pr-lpz.title" = "Main";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "H7x-kc-Tpa"; */
+"H7x-kc-Tpa.title" = "Map";
+
+/* Class = "UILabel"; text = "Have you travel recently to China?"; ObjectID = "IpA-lO-0EM"; */
+"IpA-lO-0EM.text" = "Have you travel recently to China?";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "J0Z-TN-Jhc"; */
+"J0Z-TN-Jhc.normalTitle" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "KfG-nK-ctN"; */
+"KfG-nK-ctN.normalTitle" = "No";
+
+/* Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[0] = "Confimed"; ObjectID = "Ngu-B6-Aih"; */
+"Ngu-B6-Aih.segmentTitles[0]" = "Confimed";
+
+/* Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[1] = "Health Facilities"; ObjectID = "Ngu-B6-Aih"; */
+"Ngu-B6-Aih.segmentTitles[1]" = "Health Facilities";
+
+/* Class = "UILabel"; text = "-> Cover your cough or sneeze with a tissue, then throw the tissue in the trash."; ObjectID = "Tbd-zN-nLx"; */
+"Tbd-zN-nLx.text" = "-> Cover your cough or sneeze with a tissue, then throw the tissue in the trash.";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Tuw-fC-glb"; */
+"Tuw-fC-glb.text" = "0";
+
+/* Class = "UILabel"; text = "-> Avoid touching your eyes, nose, and mouth."; ObjectID = "UOc-l0-0Xh"; */
+"UOc-l0-0Xh.text" = "-> Avoid touching your eyes, nose, and mouth.";
+
+/* Class = "UILabel"; text = "-> Avoid close contact with people who are sick."; ObjectID = "WiF-UM-sRV"; */
+"WiF-UM-sRV.text" = "-> Avoid close contact with people who are sick.";
+
+/* Class = "UIButton"; normalTitle = "Share score"; ObjectID = "YZU-JM-D6s"; */
+"YZU-JM-D6s.normalTitle" = "Share score";
+
+/* Class = "UILabel"; text = "Source: JHU CCSE"; ObjectID = "ZmZ-1N-Fk8"; */
+"ZmZ-1N-Fk8.text" = "Source: JHU CCSE";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "aMO-IY-VnN"; */
+"aMO-IY-VnN.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "b9m-vU-eAw"; */
+"b9m-vU-eAw.text" = "0";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "cQC-3m-F7K"; */
+"cQC-3m-F7K.text" = "0%";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "dYW-mC-4lv"; */
+"dYW-mC-4lv.text" = "0";
+
+/* Class = "UILabel"; text = "Deaths:"; ObjectID = "doZ-wS-p0W"; */
+"doZ-wS-p0W.text" = "Deaths:";
+
+/* Class = "UIButton"; normalTitle = "Check probability of disease"; ObjectID = "gdm-pH-pcl"; */
+"gdm-pH-pcl.normalTitle" = "Check probability of disease";
+
+/* Class = "UILabel"; text = "-> Stay home when you are sick."; ObjectID = "ggf-1j-V9I"; */
+"ggf-1j-V9I.text" = "-> Stay home when you are sick.";
+
+/* Class = "UILabel"; text = "Prevention"; ObjectID = "hlh-6j-jVk"; */
+"hlh-6j-jVk.text" = "Prevention";
+
+/* Class = "UILabel"; text = "Your probability of coronavirus disease."; ObjectID = "hpv-U0-nsh"; */
+"hpv-U0-nsh.text" = "Your probability of coronavirus disease.";
+
+/* Class = "UILabel"; text = "Coronavirus statistics"; ObjectID = "hsd-Hn-QQc"; */
+"hsd-Hn-QQc.text" = "Coronavirus statistics";
+
+/* Class = "UILabel"; text = "-> Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing."; ObjectID = "jJ9-v4-ZpC"; */
+"jJ9-v4-ZpC.text" = "-> Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "mZ8-XB-aao"; */
+"mZ8-XB-aao.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "wF1-wb-1ZY"; */
+"wF1-wb-1ZY.text" = "0";
+
+/* Class = "UIButton"; disabledTitle = "Long tap on the map."; ObjectID = "xud-3R-lIz"; */
+"xud-3R-lIz.disabledTitle" = "Long tap on the map.";
+
+/* Class = "UIButton"; normalTitle = "Add/report health facility"; ObjectID = "xud-3R-lIz"; */
+"xud-3R-lIz.normalTitle" = "Add/report health facility";
+
+/* Class = "UILabel"; text = "Recovered:"; ObjectID = "ycY-az-oxw"; */
+"ycY-az-oxw.text" = "Recovered:";
