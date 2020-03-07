@@ -1,27 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Tymoteusz24 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-github
-/
-gitignore
-3k
-96.1k50.7k
- Code Pull requests 126 Actions Projects 0 Security Insights
-gitignore/Swift.gitignore
-@Coeur Coeur Improving the documentation of Objective-C and Swift files (#3133)
-e00d43a on 7 Aug 2019
-@KrauseFx@Coeur@shiftkey@juliancadi@fidmor89@FabrizioBrancati@czechboy0@adrfer@nwest@nrbrook@natestedman@martinblech@yanniks@pogramos@evfemist@dbburgess@chrisamanse@modocache@commscheck@bbodenmiller@maxxfrazer@chenyufeng1991
-90 lines (74 sloc)  2.12 KB
   
 # Xcode
 #
@@ -79,7 +55,7 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+#Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
@@ -113,15 +89,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

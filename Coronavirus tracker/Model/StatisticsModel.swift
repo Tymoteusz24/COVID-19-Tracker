@@ -8,8 +8,7 @@
 
 import Foundation
 
-//check modifying
-
+//modifyed
 enum DataType: String, CaseIterable {
     case Confirmed = "confirmed"
     case Deaths = "deaths"
