@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Coronavirus tracker/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>COVID-19</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>We need your location to show the nearest coronavirus.</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Coronavirus tracker/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="Add facility where pacients can get help." xml:space="preserve">
+        <source>Add facility where pacients can get help.</source>
+        <note>Add facility where pacients can get help.</note>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <note>Cancel</note>
+      </trans-unit>
+      <trans-unit id="Confirm" xml:space="preserve">
+        <source>Confirm</source>
+        <note>Confirm</note>
+      </trans-unit>
+      <trans-unit id="Create health facility." xml:space="preserve">
+        <source>Create health facility.</source>
+        <note>Create health facility.</note>
+      </trans-unit>
+      <trans-unit id="Do you have a cough?" xml:space="preserve">
+        <source>Do you have a cough?</source>
+        <note>Do you have a cough?</note>
+      </trans-unit>
+      <trans-unit id="Do you have a high fever?" xml:space="preserve">
+        <source>Do you have a high fever?</source>
+        <note>Do you have a high fever?</note>
+      </trans-unit>
+      <trans-unit id="Do you have shortness of breath or shallow breathing?" xml:space="preserve">
+        <source>Do you have shortness of breath or shallow breathing?</source>
+        <note>Do you have shortness of breath or shallow breathing?</note>
+      </trans-unit>
+      <trans-unit id="Do you want to report a wrong facility?" xml:space="preserve">
+        <source>Do you want to report a wrong facility?</source>
+        <note>Do you want to report a wrong facility?</note>
+      </trans-unit>
+      <trans-unit id="Enter facility name" xml:space="preserve">
+        <source>Enter facility name</source>
+        <note>Enter facility name</note>
+      </trans-unit>
+      <trans-unit id="Global" xml:space="preserve">
+        <source>Global</source>
+        <note>Global</note>
+      </trans-unit>
+      <trans-unit id="Have you had contact with a person with coronavirus?" xml:space="preserve">
+        <source>Have you had contact with a person with coronavirus?</source>
+        <note>Have you had contact with a person with coronavirus?</note>
+      </trans-unit>
+      <trans-unit id="Have you recently traveled to a country where there were coronavirus cases?" xml:space="preserve">
+        <source>Have you recently traveled to a country where there were coronavirus cases?</source>
+        <note>Have you recently traveled to a country where there were coronavirus cases?</note>
+      </trans-unit>
+      <trans-unit id="Report" xml:space="preserve">
+        <source>Report</source>
+        <note>Report</note>
+      </trans-unit>
+      <trans-unit id="Report false facility" xml:space="preserve">
+        <source>Report false facility</source>
+        <note>Report false facility</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Coronavirus tracker/Storyboards/Base.lproj/LaunchScreen.storyboard" source-language="en" target-language="de" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="PZr-N9-tnN.text" xml:space="preserve">
+        <source>Coronavirus Tracker</source>
+        <target>Coronavirus Tracker</target>
+        <note>Class = "UILabel"; text = "Coronavirus Tracker"; ObjectID = "PZr-N9-tnN";</note>
+      </trans-unit>
+      <trans-unit id="tuv-Dd-ZSX.text" xml:space="preserve">
+        <source>COVID-19</source>
+        <target>COVID-19</target>
+        <note>Class = "UILabel"; text = "COVID-19"; ObjectID = "tuv-Dd-ZSX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Coronavirus tracker/Storyboards/Base.lproj/Main.storyboard" source-language="en" target-language="de" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="2b7-bd-zc2.title" xml:space="preserve">
+        <source>Health</source>
+        <target>Health</target>
+        <note>Class = "UITabBarItem"; title = "Health"; ObjectID = "2b7-bd-zc2";</note>
+      </trans-unit>
+      <trans-unit id="5No-xH-ivJ.text" xml:space="preserve">
+        <source>Confirmed: </source>
+        <target>Confirmed: </target>
+        <note>Class = "UILabel"; text = "Confirmed: "; ObjectID = "5No-xH-ivJ";</note>
+      </trans-unit>
+      <trans-unit id="20l-wa-5K5.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "20l-wa-5K5";</note>
+      </trans-unit>
+      <trans-unit id="Bq9-71-vAm.text" xml:space="preserve">
+        <source>-&gt; Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe.</source>
+        <target>-&gt; Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe.</target>
+        <note>Class = "UILabel"; text = "-&gt; Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe."; ObjectID = "Bq9-71-vAm";</note>
+      </trans-unit>
+      <trans-unit id="BqQ-UM-UhO.text" xml:space="preserve">
+        <source>Mortality:</source>
+        <target>Mortality:</target>
+        <note>Class = "UILabel"; text = "Mortality:"; ObjectID = "BqQ-UM-UhO";</note>
+      </trans-unit>
+      <trans-unit id="D7c-OK-wjy.normalTitle" xml:space="preserve">
+        <source>X</source>
+        <target>X</target>
+        <note>Class = "UIButton"; normalTitle = "X"; ObjectID = "D7c-OK-wjy";</note>
+      </trans-unit>
+      <trans-unit id="FNt-qH-UeS.text" xml:space="preserve">
+        <source>The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!</source>
+        <target>The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!</target>
+        <note>Class = "UILabel"; text = "The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!"; ObjectID = "FNt-qH-UeS";</note>
+      </trans-unit>
+      <trans-unit id="Gud-pr-lpz.title" xml:space="preserve">
+        <source>Main</source>
+        <target>Main</target>
+        <note>Class = "UITabBarItem"; title = "Main"; ObjectID = "Gud-pr-lpz";</note>
+      </trans-unit>
+      <trans-unit id="H7x-kc-Tpa.title" xml:space="preserve">
+        <source>Map</source>
+        <target>Map</target>
+        <note>Class = "UITabBarItem"; title = "Map"; ObjectID = "H7x-kc-Tpa";</note>
+      </trans-unit>
+      <trans-unit id="IpA-lO-0EM.text" xml:space="preserve">
+        <source>Have you travel recently to China?</source>
+        <target>Have you travel recently to China?</target>
+        <note>Class = "UILabel"; text = "Have you travel recently to China?"; ObjectID = "IpA-lO-0EM";</note>
+      </trans-unit>
+      <trans-unit id="J0Z-TN-Jhc.normalTitle" xml:space="preserve">
+        <source>Yes</source>
+        <target>Yes</target>
+        <note>Class = "UIButton"; normalTitle = "Yes"; ObjectID = "J0Z-TN-Jhc";</note>
+      </trans-unit>
+      <trans-unit id="KfG-nK-ctN.normalTitle" xml:space="preserve">
+        <source>No</source>
+        <target>No</target>
+        <note>Class = "UIButton"; normalTitle = "No"; ObjectID = "KfG-nK-ctN";</note>
+      </trans-unit>
+      <trans-unit id="Ngu-B6-Aih.segmentTitles[0]" xml:space="preserve">
+        <source>Confimed</source>
+        <target>Confimed</target>
+        <note>Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[0] = "Confimed"; ObjectID = "Ngu-B6-Aih";</note>
+      </trans-unit>
+      <trans-unit id="Ngu-B6-Aih.segmentTitles[1]" xml:space="preserve">
+        <source>Health Facilities</source>
+        <target>Health Facilities</target>
+        <note>Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[1] = "Health Facilities"; ObjectID = "Ngu-B6-Aih";</note>
+      </trans-unit>
+      <trans-unit id="Tbd-zN-nLx.text" xml:space="preserve">
+        <source>-&gt; Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</source>
+        <target>-&gt; Cover your cough or sneeze with a tissue, then throw the tissue in the trash.</target>
+        <note>Class = "UILabel"; text = "-&gt; Cover your cough or sneeze with a tissue, then throw the tissue in the trash."; ObjectID = "Tbd-zN-nLx";</note>
+      </trans-unit>
+      <trans-unit id="Tuw-fC-glb.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "Tuw-fC-glb";</note>
+      </trans-unit>
+      <trans-unit id="UOc-l0-0Xh.text" xml:space="preserve">
+        <source>-&gt; Avoid touching your eyes, nose, and mouth.</source>
+        <target>-&gt; Avoid touching your eyes, nose, and mouth.</target>
+        <note>Class = "UILabel"; text = "-&gt; Avoid touching your eyes, nose, and mouth."; ObjectID = "UOc-l0-0Xh";</note>
+      </trans-unit>
+      <trans-unit id="WiF-UM-sRV.text" xml:space="preserve">
+        <source>-&gt; Avoid close contact with people who are sick.</source>
+        <target>-&gt; Avoid close contact with people who are sick.</target>
+        <note>Class = "UILabel"; text = "-&gt; Avoid close contact with people who are sick."; ObjectID = "WiF-UM-sRV";</note>
+      </trans-unit>
+      <trans-unit id="YZU-JM-D6s.normalTitle" xml:space="preserve">
+        <source>Share score</source>
+        <target>Share score</target>
+        <note>Class = "UIButton"; normalTitle = "Share score"; ObjectID = "YZU-JM-D6s";</note>
+      </trans-unit>
+      <trans-unit id="ZmZ-1N-Fk8.text" xml:space="preserve">
+        <source>Source: JHU CCSE</source>
+        <target>Source: JHU CCSE</target>
+        <note>Class = "UILabel"; text = "Source: JHU CCSE"; ObjectID = "ZmZ-1N-Fk8";</note>
+      </trans-unit>
+      <trans-unit id="aMO-IY-VnN.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "aMO-IY-VnN";</note>
+      </trans-unit>
+      <trans-unit id="b9m-vU-eAw.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "b9m-vU-eAw";</note>
+      </trans-unit>
+      <trans-unit id="cQC-3m-F7K.text" xml:space="preserve">
+        <source>0%</source>
+        <target>0%</target>
+        <note>Class = "UILabel"; text = "0%"; ObjectID = "cQC-3m-F7K";</note>
+      </trans-unit>
+      <trans-unit id="dYW-mC-4lv.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "dYW-mC-4lv";</note>
+      </trans-unit>
+      <trans-unit id="doZ-wS-p0W.text" xml:space="preserve">
+        <source>Deaths:</source>
+        <target>Deaths:</target>
+        <note>Class = "UILabel"; text = "Deaths:"; ObjectID = "doZ-wS-p0W";</note>
+      </trans-unit>
+      <trans-unit id="ehd-uU-ugg.text" xml:space="preserve">
+        <source>Source: JHU CCSE</source>
+        <target>Source: JHU CCSE</target>
+        <note>Class = "UILabel"; text = "Source: JHU CCSE"; ObjectID = "ehd-uU-ugg";</note>
+      </trans-unit>
+      <trans-unit id="gdm-pH-pcl.normalTitle" xml:space="preserve">
+        <source>Check probability of disease</source>
+        <target>Check probability of disease</target>
+        <note>Class = "UIButton"; normalTitle = "Check probability of disease"; ObjectID = "gdm-pH-pcl";</note>
+      </trans-unit>
+      <trans-unit id="ggf-1j-V9I.text" xml:space="preserve">
+        <source>-&gt; Stay home when you are sick.</source>
+        <target>-&gt; Stay home when you are sick.</target>
+        <note>Class = "UILabel"; text = "-&gt; Stay home when you are sick."; ObjectID = "ggf-1j-V9I";</note>
+      </trans-unit>
+      <trans-unit id="hlh-6j-jVk.text" xml:space="preserve">
+        <source>Prevention</source>
+        <target>Prevention</target>
+        <note>Class = "UILabel"; text = "Prevention"; ObjectID = "hlh-6j-jVk";</note>
+      </trans-unit>
+      <trans-unit id="hpv-U0-nsh.text" xml:space="preserve">
+        <source>Your probability of coronavirus disease.</source>
+        <target>Your probability of coronavirus disease.</target>
+        <note>Class = "UILabel"; text = "Your probability of coronavirus disease."; ObjectID = "hpv-U0-nsh";</note>
+      </trans-unit>
+      <trans-unit id="hsd-Hn-QQc.text" xml:space="preserve">
+        <source>Coronavirus statistics</source>
+        <target>Coronavirus statistics</target>
+        <note>Class = "UILabel"; text = "Coronavirus statistics"; ObjectID = "hsd-Hn-QQc";</note>
+      </trans-unit>
+      <trans-unit id="jJ9-v4-ZpC.text" xml:space="preserve">
+        <source>-&gt; Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.</source>
+        <target>-&gt; Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.</target>
+        <note>Class = "UILabel"; text = "-&gt; Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing."; ObjectID = "jJ9-v4-ZpC";</note>
+      </trans-unit>
+      <trans-unit id="mZ8-XB-aao.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "mZ8-XB-aao";</note>
+      </trans-unit>
+      <trans-unit id="wF1-wb-1ZY.text" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "wF1-wb-1ZY";</note>
+      </trans-unit>
+      <trans-unit id="xud-3R-lIz.disabledTitle" xml:space="preserve">
+        <source>Tap on the map or facility</source>
+        <target>Tap on the map or facility</target>
+        <note>Class = "UIButton"; disabledTitle = "Tap on the map or facility"; ObjectID = "xud-3R-lIz";</note>
+      </trans-unit>
+      <trans-unit id="xud-3R-lIz.normalTitle" xml:space="preserve">
+        <source>Edit health facilities</source>
+        <target>Edit health facilities</target>
+        <note>Class = "UIButton"; normalTitle = "Edit health facilities"; ObjectID = "xud-3R-lIz";</note>
+      </trans-unit>
+      <trans-unit id="ycY-az-oxw.text" xml:space="preserve">
+        <source>Recovered:</source>
+        <target>Recovered:</target>
+        <note>Class = "UILabel"; text = "Recovered:"; ObjectID = "ycY-az-oxw";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Coronavirus trackerUITests/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="de">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Coronavirus trackerUITests</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

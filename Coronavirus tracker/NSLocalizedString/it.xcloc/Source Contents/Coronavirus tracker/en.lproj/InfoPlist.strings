@@ -1,0 +1,4 @@
+/* Bundle name */
+"CFBundleName" = "COVID-19";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "We need your location to show the nearest coronavirus.";

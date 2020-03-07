@@ -6,5 +6,5 @@
   Copyright © 2020 Tymoteusz Pasieka. All rights reserved.
 */
 
-"NSLocationWhenInUseUsageDescription" = "Uses location for getting user current address";
+"NSLocationWhenInUseUsageDescription" = "Abbiamo bisogno della tua posizione per mostrare l'epidemia di coronavirus più vicina.";
 

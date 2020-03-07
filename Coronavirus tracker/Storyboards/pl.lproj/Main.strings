@@ -3,61 +3,61 @@
 "20l-wa-5K5.text" = "0";
 
 /* Class = "UITabBarItem"; title = "Health"; ObjectID = "2b7-bd-zc2"; */
-"2b7-bd-zc2.title" = "Health";
+"2b7-bd-zc2.title" = "Zdrowie";
 
 /* Class = "UILabel"; text = "Confirmed: "; ObjectID = "5No-xH-ivJ"; */
-"5No-xH-ivJ.text" = "Confirmed: ";
+"5No-xH-ivJ.text" = "Potwierdzone: ";
 
 /* Class = "UILabel"; text = "-> Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe."; ObjectID = "Bq9-71-vAm"; */
-"Bq9-71-vAm.text" = "-> Clean and disinfect frequently touched objects and surfaces using a regular household cleaning spray or wipe.";
+"Bq9-71-vAm.text" = "-> Czyść i dezynfekuj często dotykane przedmioty i powierzchnie za pomocą zwykłego sprayu lub ściereczki do czyszczenia gospodarstwa domowego.";
 
 /* Class = "UILabel"; text = "Mortality:"; ObjectID = "BqQ-UM-UhO"; */
-"BqQ-UM-UhO.text" = "Mortality:";
+"BqQ-UM-UhO.text" = "Śmiertelność:";
 
 /* Class = "UIButton"; normalTitle = "X"; ObjectID = "D7c-OK-wjy"; */
 "D7c-OK-wjy.normalTitle" = "X";
 
 /* Class = "UILabel"; text = "The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!"; ObjectID = "FNt-qH-UeS"; */
-"FNt-qH-UeS.text" = "The given result cannot be treated as a true diagnosis. You should always see a doctor if you suspect a disease!";
+"FNt-qH-UeS.text" = "Podanego wyniku nie można traktować jako prawdziwej diagnozy. Zawsze udaj się do lekarza, jeśli podejrzewasz chorobę!";
 
 /* Class = "UITabBarItem"; title = "Main"; ObjectID = "Gud-pr-lpz"; */
-"Gud-pr-lpz.title" = "Main";
+"Gud-pr-lpz.title" = "Statystyki";
 
 /* Class = "UITabBarItem"; title = "Map"; ObjectID = "H7x-kc-Tpa"; */
-"H7x-kc-Tpa.title" = "Map";
+"H7x-kc-Tpa.title" = "Mapa";
 
 /* Class = "UILabel"; text = "Have you travel recently to China?"; ObjectID = "IpA-lO-0EM"; */
-"IpA-lO-0EM.text" = "Have you travel recently to China?";
+"IpA-lO-0EM.text" = "Czy ostatnio podróżowałeś do Chin?";
 
 /* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "J0Z-TN-Jhc"; */
-"J0Z-TN-Jhc.normalTitle" = "Yes";
+"J0Z-TN-Jhc.normalTitle" = "Tak";
 
 /* Class = "UIButton"; normalTitle = "No"; ObjectID = "KfG-nK-ctN"; */
-"KfG-nK-ctN.normalTitle" = "No";
+"KfG-nK-ctN.normalTitle" = "Nie";
 
-/* Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[0] = "Confimed"; ObjectID = "Ngu-B6-Aih"; */
-"Ngu-B6-Aih.segmentTitles[0]" = "Confimed";
+/* Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[0] = "Confirmed"; ObjectID = "Ngu-B6-Aih"; */
+"Ngu-B6-Aih.segmentTitles[0]" = "Potwierdzone";
 
 /* Class = "UISegmentedControl"; Ngu-B6-Aih.segmentTitles[1] = "Health Facilities"; ObjectID = "Ngu-B6-Aih"; */
-"Ngu-B6-Aih.segmentTitles[1]" = "Health Facilities";
+"Ngu-B6-Aih.segmentTitles[1]" = "Placówki zdrowia";
 
 /* Class = "UILabel"; text = "-> Cover your cough or sneeze with a tissue, then throw the tissue in the trash."; ObjectID = "Tbd-zN-nLx"; */
-"Tbd-zN-nLx.text" = "-> Cover your cough or sneeze with a tissue, then throw the tissue in the trash.";
+"Tbd-zN-nLx.text" = "-> Gdy kichasz lub kaszlesz zakrywaj usta chusteczką, którą następnie wyrzuć do smieci";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Tuw-fC-glb"; */
 "Tuw-fC-glb.text" = "0";
 
 /* Class = "UILabel"; text = "-> Avoid touching your eyes, nose, and mouth."; ObjectID = "UOc-l0-0Xh"; */
-"UOc-l0-0Xh.text" = "-> Avoid touching your eyes, nose, and mouth.";
+"UOc-l0-0Xh.text" = "-> Unikaj dotykania oczu, nosa i ust.";
 
 /* Class = "UILabel"; text = "-> Avoid close contact with people who are sick."; ObjectID = "WiF-UM-sRV"; */
-"WiF-UM-sRV.text" = "-> Avoid close contact with people who are sick.";
+"WiF-UM-sRV.text" = "-> Unikaj bliskiego kontaktu z chorymi.";
 
 /* Class = "UIButton"; normalTitle = "Share score"; ObjectID = "YZU-JM-D6s"; */
-"YZU-JM-D6s.normalTitle" = "Share score";
+"YZU-JM-D6s.normalTitle" = "Udostępnij wynik";
 
 /* Class = "UILabel"; text = "Source: JHU CCSE"; ObjectID = "ZmZ-1N-Fk8"; */
-"ZmZ-1N-Fk8.text" = "Source: JHU CCSE";
+"ZmZ-1N-Fk8.text" = "Żródło: JHU CCSE";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "aMO-IY-VnN"; */
 "aMO-IY-VnN.text" = "0";
@@ -72,28 +72,28 @@
 "dYW-mC-4lv.text" = "0";
 
 /* Class = "UILabel"; text = "Deaths:"; ObjectID = "doZ-wS-p0W"; */
-"doZ-wS-p0W.text" = "Deaths:";
+"doZ-wS-p0W.text" = "Zgony:";
 
 /* Class = "UILabel"; text = "Source: JHU CCSE"; ObjectID = "ehd-uU-ugg"; */
-"ehd-uU-ugg.text" = "Source: JHU CCSE";
+"ehd-uU-ugg.text" = "Źródło: JHU CCSE";
 
 /* Class = "UIButton"; normalTitle = "Check probability of disease"; ObjectID = "gdm-pH-pcl"; */
-"gdm-pH-pcl.normalTitle" = "Check probability of disease";
+"gdm-pH-pcl.normalTitle" = "Sprawdź prawdopodobieństwo choroby";
 
 /* Class = "UILabel"; text = "-> Stay home when you are sick."; ObjectID = "ggf-1j-V9I"; */
-"ggf-1j-V9I.text" = "-> Stay home when you are sick.";
+"ggf-1j-V9I.text" = "-> Zostań w domu, kiedy jesteś chory.";
 
 /* Class = "UILabel"; text = "Prevention"; ObjectID = "hlh-6j-jVk"; */
-"hlh-6j-jVk.text" = "Prevention";
+"hlh-6j-jVk.text" = "Zapobieganie";
 
 /* Class = "UILabel"; text = "Your probability of coronavirus disease."; ObjectID = "hpv-U0-nsh"; */
-"hpv-U0-nsh.text" = "Your probability of coronavirus disease.";
+"hpv-U0-nsh.text" = "Twoje prawdopodobieństwo choroby koronawirusowej";
 
 /* Class = "UILabel"; text = "Coronavirus statistics"; ObjectID = "hsd-Hn-QQc"; */
-"hsd-Hn-QQc.text" = "Coronavirus statistics";
+"hsd-Hn-QQc.text" = "Statystyki koronawirusa";
 
 /* Class = "UILabel"; text = "-> Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing."; ObjectID = "jJ9-v4-ZpC"; */
-"jJ9-v4-ZpC.text" = "-> Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom; before eating; and after blowing your nose, coughing, or sneezing.";
+"jJ9-v4-ZpC.text" = "-> Często myj ręce mydłem i wodą przez co najmniej 20 sekund, szczególnie po wyjściu z łazienki; przed jedzeniem; i po wydmuchaniu nosa, kaszlu lub kichaniu.";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "mZ8-XB-aao"; */
 "mZ8-XB-aao.text" = "0";
@@ -102,10 +102,10 @@
 "wF1-wb-1ZY.text" = "0";
 
 /* Class = "UIButton"; disabledTitle = "Tap on the map or facility"; ObjectID = "xud-3R-lIz"; */
-"xud-3R-lIz.disabledTitle" = "Tap on the map or facility";
+"xud-3R-lIz.disabledTitle" = "Naciśnij mapę lub obiekt";
 
 /* Class = "UIButton"; normalTitle = "Edit health facilities"; ObjectID = "xud-3R-lIz"; */
-"xud-3R-lIz.normalTitle" = "Edit health facilities";
+"xud-3R-lIz.normalTitle" = "Edytuj obiekty zdrowotne";
 
 /* Class = "UILabel"; text = "Recovered:"; ObjectID = "ycY-az-oxw"; */
-"ycY-az-oxw.text" = "Recovered:";
+"ycY-az-oxw.text" = "Wyzdrowienia:";

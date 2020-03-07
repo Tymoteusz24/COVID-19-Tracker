@@ -13,7 +13,7 @@ import StoreKit
 
 enum AppStoreReviewManager {
   // 1.
-  static let minimumReviewWorthyActionCount = 3
+  static let minimumReviewWorthyActionCount = 4
 
   static func requestReviewIfAppropriate() {
     let defaults = UserDefaults.standard
@@ -27,6 +27,8 @@ enum AppStoreReviewManager {
 
     // 4.
     defaults.set(actionCount, forKey: .reviewWorthyActionCount)
+    
+    print("\(actionCount)")
 
     // 5.
     guard actionCount >= minimumReviewWorthyActionCount else {
@@ -52,25 +54,4 @@ enum AppStoreReviewManager {
   }
 }
 
-extension UserDefaults {
-  enum Key: String {
-    case reviewWorthyActionCount
-    case lastReviewRequestAppVersion
-  }
 
-  func integer(forKey key: Key) -> Int {
-    return integer(forKey: key.rawValue)
-  }
-
-  func string(forKey key: Key) -> String? {
-    return string(forKey: key.rawValue)
-  }
-
-  func set(_ integer: Int, forKey key: Key) {
-    set(integer, forKey: key.rawValue)
-  }
-
-  func set(_ object: Any?, forKey key: Key) {
-    set(object, forKey: key.rawValue)
-  }
-}

@@ -9,14 +9,41 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var score: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let safeScore = score {
+            scoreLabel.text = "\(safeScore)%"
+        }
         // Do any additional setup after loading the view.
     }
     
+   
+    
+    @IBAction func shareButtonPressed(_ sender: RoundedButton) {
+        createScreenShot()
+    }
+    @IBAction func cancelBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func createScreenShot(){
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        var imagesToShare = [AnyObject]()
+        imagesToShare.append(image!)
 
+        let activityViewController = UIActivityViewController(activityItems: imagesToShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        present(activityViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

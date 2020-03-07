@@ -8,23 +8,91 @@
 
 import UIKit
 
+
+
 class CoronaTabBarController: UITabBarController {
+    
+  
+    var statisticsBrain = StatisticsBrain()
+    var firebaseManager = FirebaseManager()
+    var statisticsManager = StatisticsManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tabBar.tintColor = K.Colors.red
+        tabBar.barTintColor = .black
+        
+        firebaseManager.delegate = self
+        statisticsManager.delegate = self
+        print("didLoad")
+    
+        NotificationCenter.default.addObserver(self, selector: #selector(willEnterForeground), name: UIApplication.willEnterForegroundNotification
+        , object: nil)
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func willEnterForeground() {
+        print("enterForeground")
+        firebaseManager.fetchFacilities()
+        //firebaseManager.fetchStatistics()
+        statisticsManager.fetchStats(of: .All)
+        showSpinner(onView: self.view)
     }
-    */
 
+    
 }
+
+//MARK: - FirebaseDelegateManager
+
+extension CoronaTabBarController:  FirebaseManagerDelegate, StatisticManagerDelegate {
+    func didUpdateStatistis(_ stats: StatisticsManager, statsData: ([StatisticsModel], [StatisticsModel], [StatisticsModel])) {
+        DispatchQueue.main.async {
+            if let firstTab = self.viewControllers?[0] as? StatisticsController {
+        (self.statisticsBrain.confirmed,self.statisticsBrain.recovered,self.statisticsBrain.deaths) = statsData
+                firstTab.updateUI(for: firstTab.countryPicker.selectedRow(inComponent: 0), statisticBrain: self.statisticsBrain)
+            firstTab.countryPicker.reloadAllComponents()
+            self.removeSpinner()
+            }
+        }
+    }
+    
+    
+    
+    
+    func didFailUpdate(error: Error) {
+        print(error)
+    }
+    
+    
+    func didFetchStatsFromFirebase(confirmed: [StatisticsModel], recovered: [StatisticsModel], deaths: [StatisticsModel]) {
+        DispatchQueue.main.async {
+            if let firstTab = self.viewControllers?[0] as? StatisticsController {
+        (self.statisticsBrain.confirmed,self.statisticsBrain.recovered,self.statisticsBrain.deaths) = (confirmed,recovered,deaths)
+            firstTab.updateUI(for: 0, statisticBrain: self.statisticsBrain)
+            firstTab.countryPicker.reloadAllComponents()
+            self.removeSpinner()
+            }
+        }
+    }
+    
+    
+    func didAddNewPoiToFirebase(poi: HospitalFacility) {
+        if let secondTab = self.viewControllers?[1] as? MapBarController {
+            self.statisticsBrain.healthPoi.append(poi)
+            secondTab.updateUIForSControl(secondTab.typeOfMapSControl.selectedSegmentIndex)
+        }
+    }
+    
+
+    
+    func didFetchDataFromFirebase(data: [HospitalFacility]) {
+        DispatchQueue.main.async {
+        self.statisticsBrain.healthPoi = data
+        print("data: \(self.statisticsBrain.healthPoi.count)")
+        }
+    }
+    
+    
+}
+
+
