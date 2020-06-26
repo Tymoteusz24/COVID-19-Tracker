@@ -7,18 +7,11 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseDatabase
 
 protocol FirebaseManagerDelegate {
     func didFetchDataFromFirebase(data: [HospitalFacility])
     func didAddNewPoiToFirebase(poi: HospitalFacility)
-    func didFetchStatsFromFirebase(confirmed: [StatisticsModel], recovered: [StatisticsModel], deaths: [StatisticsModel])
-}
-extension FirebaseManagerDelegate {
-    func didAddNewPoiToFirebase(poi: HospitalFacility) {
-        //optional
-    }
-    
 }
 
 struct FirebaseManager {
@@ -75,48 +68,6 @@ struct FirebaseManager {
             
         }
     
-    }
-    
-    func fetchStatistics() {
-        print("startFetch")
-        statisticsRef.observeSingleEvent(of: .value) { (snapshot) in
-           // print("have snap : \(snapshot)")
-            
-            var confirmed: [StatisticsModel] = []
-            var recovered: [StatisticsModel] = []
-            var deaths: [StatisticsModel] = []
-            
-            if let statistics = snapshot.value as? [String : Any] {
-                
-                for stat in statistics {
-                    if let safeStat = stat.value as? [String: Any] {
-                        if let statModel = StatisticsModel(dict: safeStat) {
-                            switch statModel.dataType {
-                            case .Confirmed:
-                                confirmed.append(statModel)
-                                break
-                            case .Deaths:
-                                deaths.append(statModel)
-                                break
-                            case .Recovered:
-                                recovered.append(statModel)
-                                break
-                            default:
-                                break
-                            }
-                        }
-                    }
-                    
-                    
-                }
-                if let safeDelegate = self.delegate {
-                    safeDelegate.didFetchStatsFromFirebase(confirmed: confirmed, recovered: recovered, deaths: deaths)
-                }
-                
-                
-                
-            }
-        }
     }
 
 

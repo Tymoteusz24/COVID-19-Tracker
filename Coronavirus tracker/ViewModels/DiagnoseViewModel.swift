@@ -9,8 +9,8 @@
 import Foundation
 
 
-struct DiagnoseBrain {
-    let questions = [Question(question: NSLocalizedString("Have you recently traveled to a country where there were coronavirus cases?", comment: "Have you recently traveled to a country where there were coronavirus cases?"), percent: 30), Question(question: NSLocalizedString("Have you had contact with a person with coronavirus?", comment: "Have you had contact with a person with coronavirus?"), percent: 50), Question(question: NSLocalizedString("Do you have a high fever?", comment: "Do you have a high fever?"), percent: 5), Question(question: NSLocalizedString("Do you have a cough?", comment: "Do you have a cough?"), percent: 5), Question(question: NSLocalizedString("Do you have shortness of breath or shallow breathing?", comment: "Do you have shortness of breath or shallow breathing?"), percent: 5)]
+struct DiagnoseViewModel {
+    private let questions = [Question(question: NSLocalizedString("Have you recently traveled to a country where there were coronavirus cases?", comment: "Have you recently traveled to a country where there were coronavirus cases?"), percent: 30), Question(question: NSLocalizedString("Have you had contact with a person with coronavirus?", comment: "Have you had contact with a person with coronavirus?"), percent: 50), Question(question: NSLocalizedString("Do you have a high fever?", comment: "Do you have a high fever?"), percent: 5), Question(question: NSLocalizedString("Do you have a cough?", comment: "Do you have a cough?"), percent: 5), Question(question: NSLocalizedString("Do you have shortness of breath or shallow breathing?", comment: "Do you have shortness of breath or shallow breathing?"), percent: 5)]
     
     var diagnoseScore = 0
     var currentQuestion = 0
