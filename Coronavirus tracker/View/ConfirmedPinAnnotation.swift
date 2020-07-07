@@ -18,7 +18,7 @@ protocol PinProtocol {
 class ConfirmedPinAnnotation: MKPointAnnotation, PinProtocol {
     
     // properties
-    private var statisticViewModel: StatisticsViewModel
+    private let statisticViewModel: StatisticsViewModel
 
     var imageName: String {
            let dataType = statisticViewModel.type
@@ -58,7 +58,7 @@ class ConfirmedPinAnnotation: MKPointAnnotation, PinProtocol {
 
 class HealthFacilityAnnotation: MKPointAnnotation, PinProtocol {
     var imageName = "healthFacility"
-    private var healthFacility: HealthFacility
+    private let healthFacility: HealthFacility
     
     init(healthFacility: HealthFacility) {
         self.healthFacility = healthFacility
@@ -66,7 +66,7 @@ class HealthFacilityAnnotation: MKPointAnnotation, PinProtocol {
     
     func configure() {
         self.title = healthFacility.name
-        self.coordinate = CLLocationCoordinate2D(latitude: healthFacility.coordinates.longitude, longitude: healthFacility.coordinates.longitude)
+        self.coordinate = CLLocationCoordinate2D(latitude: healthFacility.coordinates.latitude, longitude: healthFacility.coordinates.longitude)
     }
     
 }

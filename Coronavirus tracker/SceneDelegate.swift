@@ -8,17 +8,66 @@
 
 import UIKit
 
+
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        self.window = self.window ?? UIWindow()
+        
+        settingTabBarAndNetworking()
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    
+    private func settingTabBarAndNetworking() {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let tabBarController = storyboard.instantiateViewController(withIdentifier: "tabBarController") as! UITabBarController
+        
+                // setup tab bar controller appearance
+                tabBarController.tabBar.tintColor = K.Colors.red
+                tabBarController.tabBar.barTintColor = .black
+                tabBarController.showSpinner(onView: tabBarController.view)
+      
+
+                let resources = Resource<StatisticsData>(for: .all)
+               
+                StatisticsManager().loadStats(resources: resources) {  (result) in
+                         switch result {
+                         case .failure(let error):
+                             print(error)
+                             DispatchQueue.main.async {
+                                tabBarController.createYesNoAlert(title: "Network problem", message: "Please refresh the connection") {
+                                    self.settingTabBarAndNetworking()
+                                }
+                             }
+                             
+                         case .success(let data):
+                             DispatchQueue.main.async {
+                                let stateController = StateController()
+                                stateController.statisticsListViewModel.populateListViewModels(with: data)
+         
+                                 for childVC in tabBarController.viewControllers ?? [] {
+                                           if let vc = childVC as? StateControllerProtocol {
+                                               print("State Controller Passed To:")
+                                               vc.setState(state: stateController)
+                                            tabBarController.removeSpinner()
+                                           }
+                                       }
+                             }
+                         }
+                     }
+                self.window!.rootViewController = tabBarController //Set the rootViewController to our modified version with the StateController instances
+                self.window!.makeKeyAndVisible()
+    }
+    
+  
+    
+  
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

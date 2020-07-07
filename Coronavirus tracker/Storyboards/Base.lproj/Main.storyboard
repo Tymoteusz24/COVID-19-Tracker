@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlU-Gy-c5j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlU-Gy-c5j">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Map-->
         <scene sceneID="riC-Qe-TvT">
             <objects>
-                <viewController id="uyr-Bt-iy5" customClass="MapBarController" customModule="COVID_19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uyr-Bt-iy5" customClass="MapBarController" customModule="Quarantaine_help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhN-52-fq2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                     <action selector="typeOfMapSCTapped:" destination="uyr-Bt-iy5" eventType="valueChanged" id="TbC-tA-Uuu"/>
                                 </connections>
                             </segmentedControl>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xud-3R-lIz" customClass="RoundedButton" customModule="COVID_19_Tracker" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xud-3R-lIz" customClass="RoundedButton" customModule="Quarantaine_help" customModuleProvider="target">
                                 <rect key="frame" x="82" y="723" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.65131789449999999" green="0.01196665503" blue="0.185541451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -77,7 +77,7 @@
         <!--Main-->
         <scene sceneID="FxY-2Q-oyY">
             <objects>
-                <viewController id="wmr-CO-5IB" customClass="StatisticsController" customModule="COVID_19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wmr-CO-5IB" customClass="StatisticsController" customModule="Quarantaine_help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ub0-Gc-S3f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,10 +99,10 @@
                                 </constraints>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="H7C-2n-b5a">
-                                <rect key="frame" x="20" y="330" width="194" height="268"/>
+                                <rect key="frame" x="20" y="330" width="165.5" height="268"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-lw-8N8">
-                                        <rect key="frame" x="0.0" y="0.0" width="194" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="44.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmed: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5No-xH-ivJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="44.5"/>
@@ -116,16 +116,10 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9m-vU-eAw">
-                                                <rect key="frame" x="185.5" y="0.0" width="8.5" height="44.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ccy-JF-6bR">
-                                        <rect key="frame" x="0.0" y="74.5" width="151" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="74.5" width="122.5" height="44.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deaths:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-wS-p0W">
                                                 <rect key="frame" x="0.0" y="0.0" width="83" height="44.5"/>
@@ -139,16 +133,10 @@
                                                 <color key="textColor" red="0.64990000000000003" green="0.17505000000000001" blue="0.34834999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-IY-VnN">
-                                                <rect key="frame" x="142.5" y="0.0" width="8.5" height="44.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.64990000000000003" green="0.17505000000000001" blue="0.34834999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iA6-wa-sWf">
-                                        <rect key="frame" x="0.0" y="149" width="191" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="149" width="162.5" height="44.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recovered:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycY-az-oxw">
                                                 <rect key="frame" x="0.0" y="0.0" width="123" height="44.5"/>
@@ -160,12 +148,6 @@
                                                 <rect key="frame" x="143" y="0.0" width="19.5" height="44.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="37"/>
                                                 <color key="textColor" red="0.3017117821253652" green="0.78039215689999997" blue="0.42999940462860503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-wb-1ZY">
-                                                <rect key="frame" x="182.5" y="0.0" width="8.5" height="44.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" red="0.30171178209999999" green="0.78039215689999997" blue="0.42999940460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -203,25 +185,22 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Main" image="person.3.fill" catalog="system" id="Gud-pr-lpz"/>
                     <connections>
-                        <outlet property="confChangeLabel" destination="b9m-vU-eAw" id="TqA-Zp-iEa"/>
                         <outlet property="confirmedLabel" destination="Tuw-fC-glb" id="XUG-yv-tyN"/>
                         <outlet property="countryPicker" destination="ztm-BL-2S5" id="oSF-Mq-eE0"/>
-                        <outlet property="deathsChangeLable" destination="aMO-IY-VnN" id="VXE-Nh-4YG"/>
                         <outlet property="deathsLabel" destination="dYW-mC-4lv" id="GnO-xA-luZ"/>
                         <outlet property="mortalityLabel" destination="mZ8-XB-aao" id="IkK-vP-JxH"/>
-                        <outlet property="recovChangeLabel" destination="wF1-wb-1ZY" id="XVC-gW-LwS"/>
                         <outlet property="recoverdedLabel" destination="20l-wa-5K5" id="VYQ-qn-awf"/>
                         <outlet property="titleLabel" destination="hsd-Hn-QQc" id="9eX-7c-uTN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8h-Hn-vYf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1720.289855072464" y="227.67857142857142"/>
+            <point key="canvasLocation" x="-1680" y="321"/>
         </scene>
-        <!--Corona Tab Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="4Cv-7d-BiC">
             <objects>
-                <tabBarController id="zlU-Gy-c5j" customClass="CoronaTabBarController" customModule="COVID_19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="zlU-Gy-c5j" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hyb-ck-afq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -240,7 +219,7 @@
         <!--Score View Controller-->
         <scene sceneID="zI1-K7-Td8">
             <objects>
-                <viewController id="MfH-3i-csH" customClass="ScoreViewController" customModule="COVID_19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MfH-3i-csH" customClass="ScoreViewController" customModule="Quarantaine_help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRa-P5-maf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -251,7 +230,7 @@
                                     <constraint firstAttribute="width" secondItem="8Le-xf-PXM" secondAttribute="height" multiplier="2:1" id="b9L-rT-rww"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZU-JM-D6s" customClass="RoundedButton" customModule="COVID_19_Tracker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZU-JM-D6s" customClass="RoundedButton" customModule="Quarantaine_help" customModuleProvider="target">
                                 <rect key="frame" x="82" y="708" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.64990299939999996" green="0.17505139110000001" blue="0.34834676980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -336,12 +315,12 @@
         <!--Health-->
         <scene sceneID="98U-2t-Knm">
             <objects>
-                <viewController id="HSq-ve-wsE" customClass="DiagnoseViewController" customModule="COVID_19_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HSq-ve-wsE" customClass="DiagnoseViewController" customModule="Quarantaine_help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMK-jS-LX4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdm-pH-pcl" customClass="RoundedButton" customModule="COVID_19_Tracker" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdm-pH-pcl" customClass="RoundedButton" customModule="Quarantaine_help" customModuleProvider="target">
                                 <rect key="frame" x="57" y="733" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.65131789449999999" green="0.01196665503" blue="0.185541451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -371,7 +350,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="MWC-gF-vVC">
                                                 <rect key="frame" x="0.0" y="157.5" width="374" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Z-TN-Jhc" customClass="RoundedButton" customModule="COVID_19_Tracker" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Z-TN-Jhc" customClass="RoundedButton" customModule="Quarantaine_help" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167" height="50"/>
                                                         <color key="backgroundColor" red="0.65131789449999999" green="0.01196665503" blue="0.185541451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -385,7 +364,7 @@
                                                             <action selector="answer:" destination="HSq-ve-wsE" eventType="touchUpInside" id="hYd-lD-jft"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfG-nK-ctN" customClass="RoundedButton" customModule="COVID_19_Tracker" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfG-nK-ctN" customClass="RoundedButton" customModule="Quarantaine_help" customModuleProvider="target">
                                                         <rect key="frame" x="207" y="0.0" width="167" height="50"/>
                                                         <color key="backgroundColor" red="0.65131789449999999" green="0.01196665503" blue="0.185541451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -503,8 +482,8 @@
     </scenes>
     <resources>
         <image name="coronaIconBigger" width="80" height="80"/>
-        <image name="person.3.fill" catalog="system" width="71" height="34"/>
-        <image name="pin.fill" catalog="system" width="58" height="64"/>
-        <image name="waveform.path.ecg" catalog="system" width="64" height="62"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="pin.fill" catalog="system" width="119" height="128"/>
+        <image name="waveform.path.ecg" catalog="system" width="128" height="124"/>
     </resources>
 </document>

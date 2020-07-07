@@ -15,7 +15,7 @@ class DiagnoseViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var preventionInfoView: UIView!
     
-    var diagnoseBrain = DiagnoseBrain()
+    var diagnoseViewModel = DiagnoseViewModel()
     
     
     override func viewDidLoad() {
@@ -23,9 +23,9 @@ class DiagnoseViewController: UIViewController {
         updateUI()
         // Do any additional setup after loading the view.
     }
-    
+
     func updateUI() {
-        if !diagnoseBrain.startedDiagnose {
+        if !diagnoseViewModel.startedDiagnose {
             preventionInfoView.isHidden = false
             questionStackView.isHidden = true
             startButton.isHidden = false
@@ -33,41 +33,31 @@ class DiagnoseViewController: UIViewController {
             preventionInfoView.isHidden = true
             questionStackView.isHidden = false
             startButton.isHidden = true
-            questionLabel.text = diagnoseBrain.currentQuestionText
+            questionLabel.text = diagnoseViewModel.currentQuestionText
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == K.diagnoseSegue {
             if let destinationVC = segue.destination as? ScoreViewController {
-                destinationVC.score = diagnoseBrain.diagnoseScore
+                destinationVC.score = diagnoseViewModel.diagnoseScore
             }
         }
     }
     
     @IBAction func answer(_ sender: RoundedButton) {
         if  sender.tag == 1 {
-            diagnoseBrain.updateScore(by: diagnoseBrain.currentQuestionPercent)
+            diagnoseViewModel.updateScore(by: diagnoseViewModel.currentQuestionPercent)
         }
-        if diagnoseBrain.nextQuestion() != nil {
+        if diagnoseViewModel.nextQuestion() != nil {
             performSegue(withIdentifier: K.diagnoseSegue, sender: nil)
         }
         updateUI()
     }
     
     @IBAction func startButtonPressed(_ sender: RoundedButton) {
-        diagnoseBrain.startDiagnose(true)
+        diagnoseViewModel.startDiagnose(true)
         updateUI()
     }
     

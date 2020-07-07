@@ -30,6 +30,8 @@ class ScoreViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    
+    
     func createScreenShot(){
         UIGraphicsBeginImageContext(view.frame.size)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)

@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Coronavirus_tracker_Coronavirus_trackerUITests : NSObject
-@end
-@implementation PodsDummy_Pods_Coronavirus_tracker_Coronavirus_trackerUITests
-@end

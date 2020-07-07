@@ -16,23 +16,6 @@
 
 import Foundation
 
-extension Date {
-    static var yesterday: Date { return Date().dayBefore }
-    static var dayBeforeYesterday: Date { return Date().twoDayBefore }
-    
-    var dayBefore: Date {
-        return Calendar.current.date(byAdding: .day, value: -1, to: noon)!
-    }
-    
-    var twoDayBefore: Date {
-        return Calendar.current.date(byAdding: .day, value: -2, to: noon)!
-    }
-    var noon: Date {
-        return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
-    }
-    
-}
-
 struct StatisticsData: Codable {
     let confirmed: Confirmed
     let recovered: Recovered
@@ -45,17 +28,17 @@ protocol DataTypeForModel {
     var locations: [Locations] { get }
 }
 
-struct Confirmed: Codable, DataTypeForModel {
+struct Confirmed: Codable {
     let latest: Int
     let locations: [Locations]
     
     
 }
-struct Recovered: Codable, DataTypeForModel {
+struct Recovered: Codable{
     let latest: Int
     let locations: [Locations]
 }
-struct Deaths: Codable, DataTypeForModel {
+struct Deaths: Codable {
     let latest: Int
     let locations: [Locations]
 }
@@ -63,7 +46,7 @@ struct Deaths: Codable, DataTypeForModel {
 struct Locations: Codable {
     let coordinates: Coordinates
     let country: String
-    let history: [String : String]
+   // let history: [String : Int]
     let latest: Int
     let province: String
 }

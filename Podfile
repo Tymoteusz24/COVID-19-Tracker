@@ -8,8 +8,9 @@ target 'Coronavirus tracker' do
   # Pods for Coronavirus tracker
 
 # add the Firebase pod for Google Analytics
-pod 'Firebase/Analytics'
-pod 'Firebase/Database'
+# pod 'Firebase/Analytics'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
 
   target 'Coronavirus trackerTests' do
     inherit! :search_paths

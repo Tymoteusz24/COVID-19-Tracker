@@ -7,69 +7,60 @@
 //
 
 import Foundation
-import FirebaseDatabase
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
-protocol FirebaseManagerDelegate {
-    func didFetchDataFromFirebase(data: [HospitalFacility])
-    func didAddNewPoiToFirebase(poi: HospitalFacility)
-}
 
 struct FirebaseManager {
-    private let ref: DatabaseReference! = Database.database().reference()
-    private var hospitalFacilityRef: DatabaseReference! {
-        return ref.child("healthFacility")
+    private let db = Firestore.firestore()
+    
+    private var hospitalFacilityRef: CollectionReference {
+        return db.collection("healthFacility")
     }
     
-    private var statisticsRef: DatabaseReference! {
-        return ref.child("statistics")
-    }
-    
-    var delegate: FirebaseManagerDelegate?
-    
-    var healthFacilities: [HospitalFacility] = []
-    
-    
-    func createPoiForHospital(for hospital: [String: Any]){
-       
-        hospitalFacilityRef.childByAutoId().setValue(hospital) { (error, reference) in
-            if error != nil {
-                print(error!)
-            } else {
-                let newHospital = HospitalFacility(firebaseDict: hospital, keyValue: reference.key!)
-                if let _ = self.delegate {
-                    self.delegate?.didAddNewPoiToFirebase(poi: newHospital)
-                }
+    func fetchHealhFacilities<T: Decodable> (model: T.Type, completion: @escaping ([T]?, NetworkError?) -> Void) {
+        hospitalFacilityRef.getDocuments { (snapshot, error) in
+            guard error == nil else { completion(nil,NetworkError.firebaseError) ; return}
+            
+            if let snapshot = snapshot {
+                
+                let res: [T?]? = snapshot.documents.map({
+                    let document = $0
+                    if let result = try? document.data(as: T.self) {return result}
+                    return nil
+                })
+                
+                guard let result = res as? [T] else {completion(nil, NetworkError.decodingError) ; return }
+                completion(result, nil)
+                
+// ANOTHER IMPLEMENTATION
+//                var tempData = [T]()
+//                for document in snapshot.documents {
+//                    
+//                    let result = Result { try document.data(as: T.self) }
+//                    switch result {
+//                    case .success(let model):
+//                        if let model = model {
+//                            tempData.append(model)
+//                        }
+//                    case .failure(let error):
+//                        completion(tempData, error)
+//                    }
+//                    
+//                }
+//                completion(tempData,nil)
+                
             }
-            
         }
-        
     }
     
-    func reportAFacility(for key: String) {
-        hospitalFacilityRef.child(key).child("confirmed").setValue(false)
-    }
-    
-    func fetchFacilities() {
-        
-        hospitalFacilityRef.observeSingleEvent(of: .value) { (snapshot) in
-            
-            if let facilities = snapshot.value as? [String : Any] {
-                var facilitiesArray: [HospitalFacility] = []
-                for facility in facilities {
-                    if let safeFacility = facility.value as? [String: Any] {
-                        facilitiesArray.append(HospitalFacility(firebaseDict: safeFacility, keyValue: facility.key))
-                    }
-                    
-                }
-                if let safeDelegate = self.delegate {
-                    safeDelegate.didFetchDataFromFirebase(data: facilitiesArray)
-                }
-            }
-            
+    func addHealthFacility(healthFacility: HealthFacility, completion: @escaping (NetworkError?) -> Void) {
+        do {
+            try hospitalFacilityRef.document().setData(from: healthFacility)
+            completion(nil)
+        } catch {
+            completion(.decodingError)
         }
-    
     }
 
-
-    
 }
